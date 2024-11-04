@@ -345,7 +345,7 @@ const addDogAge = async (req, res) => {
   }
 
   // Verify to user that age has been updated
-  return res.json({ message: `${doc.name}'s age has been increased by 1 year, to ${doc.age}.` });
+  return res.json({ message: `${doc.name}'s age has been increased by 1 year, to ${doc.age + 1}.` });
 };
 
 // A function to send back the 404 page.
