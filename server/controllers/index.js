@@ -344,7 +344,8 @@ const addDogAge = async (req, res) => {
     return res.status(500).json({ error: 'Something went wrong attempting to add age.' });
   }
 
-  return res.json({ message: `${doc.name}'s age has been increased by 1 year.` });
+  // Verify to user that age has been updated
+  return res.json({ message: `${doc.name}'s age has been increased by 1 year, to ${doc.age}.` });
 };
 
 // A function to send back the 404 page.
